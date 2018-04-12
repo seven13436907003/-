@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1" />
+    <title>天天果园-水果网购|生鲜生活</title>
+    <style>
+        body, html, h1, h2, h3 ,p, hr, li, from, label, i, em{
+      margin: 0;
+      padding: 0;
+    }
+    html, bady{
+      font-family: Arial,"Microsoft Yahei",sans-serif;
+      height: 100%;
+    }
+    h1, h2, h3 {
+      font-weight: normal;
+      font-size: 100%;
+    }
+    a {
+      -webkit-tap-highlight-color: transparent;
+      text-decoration: none;
+    }
+    img {
+      border: none;
+      vertical-align: middle;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+
+    }
+    input {
+      -webkit-appearance: none;
+      outline: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    </style>
+    <script>
+    	(function (doc, win) {
+    		var docEl = doc.documentElement,
+    		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+    		recalc = function () {
+    			var clientWidth = docEl.clientWidth;
+    			if(!clientWidth) return;
+    			if(clientWidth>=750){
+    				docEl.style.fontSize = '100px';
+    			}else{
+    				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+    			}
+    		};
+    		if(!doc.addEventListener) return;
+    		win.addEventListener(resizeEvt, recalc, false);
+    		doc.addEventListener('DOMContentLoaded', recalc, false);
+    	})(document, window);
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
